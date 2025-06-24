@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <title>🍅 番茄鐘計時器</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🍅 番茄鐘</h1>
+  
+  <div id="timer">25:00</div>
+  <p id="status">工作中</p>
+
+  <div class="controls">
+    <button onclick="startTimer()">開始</button>
+    <button onclick="pauseTimer()">暫停</button>
+    <button onclick="resetTimer()">重設</button>
+  </div>
+
+  <div class="settings">
+    <label>工作時間（分鐘）<input type="number" id="workTime" value="25" min="1" /></label>
+    <label>休息時間（分鐘）<input type="number" id="breakTime" value="5" min="1" /></label>
+    <button onclick="applySettings()">套用設定</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
